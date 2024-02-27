@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cacaca;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #F8F8F9, #111439);
+  width: 650px;
+  height: 550px;
+  border-radius: 150px;
+  box-shadow: 4px 4px 20px rgba(10, 10, 10, 0.3), -4px -4px 20px rgba(10, 10, 10, 0.5);
+}
+
+.wrapper {
+  border: 1px solid transparent;
+  border-radius: 100px;
+  width: 550px;
+  height: 200px;
+  box-shadow: 4px 4px 20px rgba(10, 10, 10, 0.3), -4px -4px 20px rgba(10, 10, 10, 0.5);
+  background: linear-gradient(-15deg, #96C2DB, #E5EDF1, #EE72F8);
+}
+
+.nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#hamburger {
+  font-size: 50px;
+  margin-top: 10px;
+ 
+}
+
+.home,
+.content,
+.about,
+.contact {
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 10px;
+  text-shadow: 4px 4px 20px rgba(255, 255, 255, 0.3), -4px -4px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+#change{
+  font-size: 50px;
+  margin-top: 10px;
+  display: none;
+}
+
+
+.home:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+  text-decoration: underline;
+  text-decoration-color: #222;
+  text-underline-offset: 10px;
+}
+
+.content:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+  text-decoration: underline;
+  text-decoration-color: #222;
+  text-underline-offset: 10px;
+}
+
+.about:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+  text-decoration: underline;
+  text-decoration-color: #222;
+  text-underline-offset: 10px;
+}
+
+.contact:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+  text-decoration: underline;
+  text-decoration-color: #222;
+  text-underline-offset: 10px;
+}
+
+#hamburger:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+} 
+ 
+
+#change:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+}
+
+#hamburger, #change {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+
+.list{
+  gap: 20px;
+  display: none;
+}
+
+.list li{
+  list-style-type: none;
+}
+
+
+.dropwrapper{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 10%;
+}
+
+
+
+#drop a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cacaca;
+
+  }
+
+
+  .container {
+    background: linear-gradient(135deg, #F8F8F9, #111439);
+    margin-top: 230px;
+    width: 380px;
+    height: 200px;
+    border-radius: 200px;
+    box-shadow: 4px 4px 20px rgba(10, 10, 10, 0.3), -4px -4px 20px rgba(10, 10, 10, 0.5);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    box-shadow: 4px 4px 20px rgba(10, 10, 10, 0.3), -4px -4px 20px rgba(10, 10, 10, 0.5);
+    background: linear-gradient(-15deg, #96C2DB, #E5EDF1, #EE72F8);
+
+  }
+
+  .home,
+  .content,
+  .about,
+  .contact {
+    display: none;
+  }
+
+  .nav {
+    gap: 50px;
+  }
+
+  .nav a {
+    width: 20px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  #hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  #change{
+    margin-bottom: 20%;
+
+  }
+
+  .list{
+    gap: 40px;
+    
+  }
+  
+  .list li{
+    list-style-type: none;
+  }
+  
+  
+  .dropwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10%;
+  }
+  
+  
+  
+  #drop a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+}
